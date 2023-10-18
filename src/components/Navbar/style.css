@@ -2,3 +2,34 @@
     background: rgba(255, 255, 255, 0.04) !important;
     backdrop-filter: blur(40.774227142333984px) !important;
 }
+@media screen and (max-width:480px) {
+    .litop{
+       position: absolute ;
+        top:17rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .li1{
+        top: 11rem;
+        left:3rem;
+    }}
+
+    @media screen and (max-width:480px) {
+        .li2{
+            top:13rem;
+            left:3rem;
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        .li3{
+            top:15rem;
+            left:3rem;
+        }}
+
+        @media screen and (max-width:480px) {
+            .li4{
+                top:17rem;
+                left:3rem;
+            }}

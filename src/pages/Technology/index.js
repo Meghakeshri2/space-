@@ -26,13 +26,13 @@ const Technology = () => {
             <nav className="techmobnav flex  items-center justify-between lg:hidden  ">
               <ul className="  flex flex-row  justify-center   text-center  md:ml-72 lg:ml-0 gap-x-4">
                 {machine.map((craft, index) => (
-                  <li className="hover:cursor-pointer techNav h-12 border-2 border-r-96 p-2.5 border-white  hover:bg-white bg-none hover:text-black text-white ">
+                  <li className="hover:cursor-pointer techNav h-12 border-2 border-r-96 p-2.5 border-white  hover:bg-white bg-none hover:text-black text-white "  key={index + ""}
+                  onClick={() => {
+                    setIndex(index);
+                  }}>
                     <span
                       className="place-items-center p-2 m-2 text-center"
-                      key={index + ""}
-                      onClick={() => {
-                        setIndex(index);
-                      }}
+                     
                     >
                       {index + 1}
                     </span>
@@ -53,13 +53,13 @@ const Technology = () => {
             <nav className=" TechNav flex  items-center justify-between sticky  ">
               <ul className="  flex flex-col  justify-center   text-center  lg:ml-0 gap-y-4">
                 {machine.map((craft, index) => (
-                  <li className="hover:cursor-pointer techNav h-16 border-2 border-r-96 p-2.5 border-white  hover:bg-white bg-none hover:text-black text-white ">
+                  <li className="hover:cursor-pointer techNav h-16 border-2 border-r-96 p-2.5 border-white  hover:bg-white bg-none hover:text-black text-white " key={index + ""}
+                  onClick={() => {
+                    setIndex(index);
+                  }}>
                     <span
                       className="place-items-center p-2 m-2 text-center relative top-2"
-                      key={index + ""}
-                      onClick={() => {
-                        setIndex(index);
-                      }}
+                      
                     >
                       {index + 1}
                     </span>
